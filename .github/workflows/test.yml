@@ -18,4 +18,6 @@ jobs:
       - name: test
         uses: zhuchcn/test-action@master
         with:
-          foo: ['bar1', 'bar2']
+          foo: 
+            - 'bar1'
+            - 'bar2'
