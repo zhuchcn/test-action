@@ -1,0 +1,12 @@
+---
+name: 'Render and deploy docs'
+description: 'Render pipeline documentation and deploy to GH-Pages'
+inputs:
+  foo:
+    description: 'Foo'
+
+runs:
+  using: 'composite'
+  steps:
+    - run: echo ${{ inputs.foo }}
+      shell: bash
